@@ -17,3 +17,19 @@
 //     sum = sum + n
 // }
 // document.write(sum)
+
+// While - Loop 
+
+// var x = 1 ;
+// while (x <= 20 ){
+//     document.write(" " + x )
+//     x = x + 1 ;
+// }
+
+// ******* Do While ******
+// var x = 1
+// do{
+//     document.write(" " + x )
+//     x++
+// }
+// while(x <= 20)
