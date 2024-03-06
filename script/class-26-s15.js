@@ -30,7 +30,7 @@
 // console.log(sum);
 
 // ******* array value with prompt()
- var names = ["tuhin" , "rakib " , "loya" , "luna" ]
+//  var names = ["tuhin" , "rakib " , "loya" , "luna" , "anisul" ]
 // ***** shift method
 //  names.shift()
 //  console.log(names);
@@ -40,5 +40,7 @@
 // console.log(names);
 
 //****** */ splice method
-names.splice(1 , 2 , "tuan" ,"efa")
-console.log(names);
+// var newarray = names.slice(1 , 3)
+// console.log(newarray);
+// names.sort()
+// console.log(names);
