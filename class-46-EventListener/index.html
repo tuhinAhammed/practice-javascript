@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+   <div class="flex">
+    <div class="left"> 
+        <!-- click Event -->
+        <span>Click - Event Event</span> <br/>
+    
+        <button class="click ">Click Event</button> <br/> <br/>
+    
+        <!-- key Press Event -->
+        <span>key Press - Event</span> <br/>
+        <textarea name="" class="keyPress" cols="20" rows="3"></textarea>
+        <p class="keyPressOutput"></p> <br/>
+        
+    <!-- Change - Event -->
+        <span>Change - Event</span> <br/>
+        <label for="Name">
+            Name
+            <input type="text" name="name" >
+            <p class="nameOutput"></p>
+        </label>
+        <label for="gender">
+            Gender : 
+            <label for="">
+                <input type="radio" name="gender" value="male" >
+                Male
+            </label>
+            <label for="">
+                <input type="radio" name="gender" value="female" >
+                Female
+            </label>
+            <p class="genderOutput"></p>
+        </label> <br/>
+    
+    <label>
+        Subject
+        <Select class="subject" >
+            <option value="EEE" >EEE</option>
+            <option value="CSE" >CSE</option>
+            <option value="BSE" >BSE</option>
+        </Select>
+        <p class="subjectOutput"></p>
+    </label>
+    <textarea class="changeTextarea" name="" id="" cols="20" rows="3"></textarea>
+    <p class="textareaOutput"></p> <br/>
+    
+    <!-- *************** Submit - Event **************** -->
+        <span>Submit - Event</span> <br/>
+     <form action="" class="form">
+        <label for="">
+            name 
+            <input type="text" autofocus required name="name" class="name"> <br/>
+        </label>
+        <label for="">
+            email 
+            <input type="text" name="name" class="email" > <br/>
+        </label>
+        <label for="">
+            password 
+            <input type="password" name="name" class="password"> <br/>
+        </label>
+        <label for=""> 
+            <input type="submit" name="name" class="submit">
+        </label>
+     </form> <br/>
+     <p class="formOutput">n</p>
+    
+    <!-- *************** canPlay - Event  , Play - Event , push - Event , playing - Event ,ended - Event ----- For Audio & Video **************** -->
+</div>
+    
+    <div class="Right">
+        <p class="output"></p>
+        <details >
+            <summary>Why This</summary>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, porro molestias. Cumque temporibus earum iusto voluptatum, voluptates, officia corrupti quisquam ipsam officiis est qui fugit ratione maxime debitis nam asperiores?</p>
+        </details>
+
+    </div>
+   </div>
+
+    <style>
+        .click{
+            padding: 8px 10px;
+            border: 2px solid orange;
+            background: orange;
+        }
+        .clickAnim{
+            border: 2px solid green;
+            background: green;            
+        }
+        .flex {
+            display: flex;
+            
+        }
+        .Right{
+            border-left: 2px solid green;
+            height: 100vh;
+            padding-left: 50px;
+        }
+        .left{
+            height: 100vh;
+            padding-right: 50px;
+        }
+    </style>
+    <script src="./script.js"></script>
+</body>
+</html>

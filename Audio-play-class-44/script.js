@@ -1,15 +1,19 @@
 var btnLength = document.querySelectorAll(".btn").length
-for(var i = 0 ; i < btnLength ; i++){
-    var btn = document.querySelectorAll(".btn")[i].addEventListener("click" , plays)
 
+for(var i = 0 ; i < btnLength ; i++){
+    var btn = document.querySelectorAll(".btn")[i].addEventListener("click" , function(){
+        var text = this.innerHTML
+        console.log(text);
+        plays(text)
+    })
 
 }
 function plays(text){
-    var text = this.innerHTML
+
     switch (text) {
         case "a":
             console.log("a");
-            var audio = new Audio ("sounds/a.mp3" , 1000)
+            var audio = new Audio ("sounds/a.mp3" )
             audio.play()
             setTimeout( function(){
                 audio.pause();
