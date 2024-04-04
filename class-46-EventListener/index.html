@@ -7,6 +7,7 @@
     <title>Event Listener</title>
 </head>
 <body>
+    <marquee behavior="" direction="400">addEventListener -- Class-46-55-s19-s22</marquee>
    <div class="flex">
     <div class="left"> 
         <!-- click Event -->
@@ -15,12 +16,12 @@
         <button class="click ">Click Event</button> <br/> <br/>
     
         <!-- key Press Event -->
-        <span>key Press - Event</span> <br/>
+        <h3>key Press - Event</h3> <br/>
         <textarea name="" class="keyPress" cols="20" rows="3"></textarea>
         <p class="keyPressOutput"></p> <br/>
         
     <!-- Change - Event -->
-        <span>Change - Event</span> <br/>
+        <h3>Change - Event</h3> <br/>
         <label for="Name">
             Name
             <input type="text" name="name" >
@@ -49,40 +50,67 @@
         <p class="subjectOutput"></p>
     </label>
     <textarea class="changeTextarea" name="" id="" cols="20" rows="3"></textarea>
-    <p class="textareaOutput"></p> <br/>
+    <p class="textareaOutput"></p> 
     
-    <!-- *************** Submit - Event **************** -->
-        <span>Submit - Event</span> <br/>
-     <form action="" class="form">
-        <label for="">
-            name 
-            <input type="text" autofocus required name="name" class="name"> <br/>
-        </label>
-        <label for="">
-            email 
-            <input type="text" name="name" class="email" > <br/>
-        </label>
-        <label for="">
-            password 
-            <input type="password" name="name" class="password"> <br/>
-        </label>
-        <label for=""> 
-            <input type="submit" name="name" class="submit">
-        </label>
-     </form> <br/>
-     <p class="formOutput">n</p>
+
     
     <!-- *************** canPlay - Event  , Play - Event , push - Event , playing - Event ,ended - Event ----- For Audio & Video **************** -->
-</div>
-    
-    <div class="Right">
+    </div>
+    <div class="middle">
+            <!-- *************** Submit - Event **************** -->
+            <h3>Submit - Event</h3> 
+            <form action="" class="form">
+               <label for="">
+                   name 
+                   <input type="text"  required name="name" class="name"> <br/>
+               </label>
+               <label for="">
+                   email 
+                   <input type="text" name="name" class="email" > <br/>
+               </label>
+               <label for="">
+                   password 
+                   <input type="password" name="name" class="password"> <br/>
+               </label><br/>
+               <label for=""> 
+                   <button class="submit">SUBMIT</button>
+                   <!-- <input type="submit" name="name" class="submit"> -->
+               </label>
+            </form> 
+            <p class="formOutput"></p>
+
+        <!-- ********* Toggle  - Event -->
         <p class="output"></p>
         <details >
             <summary>Why This</summary>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, porro molestias. Cumque temporibus earum iusto voluptatum, voluptates, officia corrupti quisquam ipsam officiis est qui fugit ratione maxime debitis nam asperiores?</p>
         </details>
 
+        <!-- ********* Mouse  - Event -->
+        <H3>Mouse Event</H3>
+        <button class="mouseEvent">Mouse Event</button>  <br/>
+        <p class="mouseOutput">Mouse Event Output</p>
+
+        <!-- ********* Focus  - Event -->
+        <H3>Focus Event</H3>
+        <button class="focusEvent" autofocus >Focus Event</button>  <br/>
+        <p class="focusOutput">Focus Event Output</p>
+
+        <!-- *********  Clickboard  - Event -->
+        <H3>Clickboard Event</H3>
+        <textarea class="clickboardEvent" autofocus name="" id="" cols="20" rows="3"></textarea>
+        <p class="clickboardOutput">Clickboard Event Output</p>
+
+
     </div>
+    <div class="right">
+                <!-- *********  Drag  - Event -->
+                <H3>Drag Event</H3>
+                <div  class="dragHere" >Drug Here</div>
+                <p class="dragText" draggable="true">Drug Text</p>
+
+    </div>
+
    </div>
 
     <style>
@@ -95,9 +123,32 @@
             border: 2px solid green;
             background: green;            
         }
+        .mouseEvent{
+            padding: 8px 10px;
+            border: 2px solid tomato;
+            background: tomato;
+        }
+        .mouseEventAnim{
+            border: 2px solid green;
+            background: green; 
+        }
+        .focusEvent{
+            padding: 8px 10px;
+            border: 2px solid orange;
+            background: orange;
+        }
+        .focusEventAnim{
+            border: 2px solid green;
+            background: green;            
+        }
         .flex {
-            display: flex;
-            
+            display: flex ;
+            justify-content: space-around;
+        }
+        .middle{
+            border-left: 2px solid green;
+            height: 100vh;
+            padding-left: 50px;
         }
         .Right{
             border-left: 2px solid green;
@@ -107,6 +158,42 @@
         .left{
             height: 100vh;
             padding-right: 50px;
+        }
+        .clickboardEvent{
+            border: 2px dotted;
+            border-color: green;
+
+        }
+        /* .clickboardEvent:focus-visible{
+            outline: 3px dotted orange ;
+        } */
+        .clickboardEventAnim  {
+            border: 3px dotted;
+            border-color: tomato;
+            outline: none;
+        }
+        .dragHere{
+            padding: 40px 100px;
+            background:rgb(255, 131, 109);
+        }
+        .dragHereAnim{
+            border: 5px dotted green;
+        }
+
+        .submit{
+            padding: 8px 10px;
+            border: 2px solid orange;
+            background: orange;
+        }
+        .submitAnim{
+            padding: 8px 10px;
+            border: 2px solid green;
+            background: green;            
+        }
+        marquee{
+            padding: 8px 20px;
+            background:rgb(255, 131, 109);
+            font-size: 18px;
         }
     </style>
     <script src="./script.js"></script>
