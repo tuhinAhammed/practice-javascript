@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <h1 class="t"></h1>
+</head>
+<body>
+
+<script>
+    // Error Handle
+    // try {
+    //     throw "error Founded"
+    // }
+    // catch(){
+        // finally()
+    // }
+
+    // use strict || for avoid programm
+    var t = document.querySelector(".t") 
+        const demo = (text = "Add Friend Request") =>{
+            t.innerHTML = text
+        }
+        demo("Cancle Request")
+    // Rest Parameter
+    function test (x,y,...z) {
+        console.log(`x = ${x} , y = ${y} , z = ${z}`);
+    }
+    test(10 , 20 , 30 , 40 , 50)
+
+
+    // Spread Operator
+    // same ass rest parameter but it works with -- Array & Object
+
+    // object Literals Parameters
+    function objectLiterals (name , age){
+
+    return {
+        name : name ,
+        age : age
+    }
+    }
+    console.log(objectLiterals("tuhin" , 34));
+
+    // for...of , for...in
+
+try{
+    var students = {
+        name : "tuhin",
+        age : 21 ,
+        id  : 123
+    }
+for(var x in students){
+    console.log(`${x} : ${students[x]}`)
+
+    // throw{
+    //        name : "Baler Error" ,
+    //        message : "programm Is now working"
+    //     } 
+}
+}
+catch(err){
+    console.log(err);
+    console.log(err.message);
+    console.log(err.name);
+}
+
+// forEatch function
+var demoArr = [10 , 20 , 30 , 40]
+var demoSquar =[]
+demoArr.forEach((x)=>{
+    demoSquar.push(x * x)
+})
+console.log(demoSquar);
+    </script>
+
+</body>
+</html>
